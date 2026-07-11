@@ -1,0 +1,15 @@
+{
+  "name": "asda-scraper",
+  "version": "0.0.1",
+  "description": "Apify actor for Asda Scraper",
+  "main": "src/main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "dependencies": {
+    "apify": "^3.1.10",
+    "crawlee": "^3.5.4",
+    "playwright": "*"
+  }
+}

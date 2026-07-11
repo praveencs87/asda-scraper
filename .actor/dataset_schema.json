@@ -1,0 +1,44 @@
+{
+  "actorSpecification": 1,
+  "fields": {
+    "type": "object",
+    "properties": {
+      "url": {
+        "type": "string",
+        "title": "URL",
+        "description": "URL of the product"
+      },
+      "title": {
+        "type": "string",
+        "title": "Product Title",
+        "description": "Title of the product"
+      },
+      "price": {
+        "type": "string",
+        "title": "Price",
+        "description": "Product price"
+      },
+      "weight": {
+        "type": "string",
+        "title": "Weight/Volume",
+        "description": "Product weight or volume"
+      }
+    }
+  },
+  "views": {
+    "overview": {
+      "title": "Overview",
+      "transformation": {
+        "fields": [
+          "url",
+          "title",
+          "price",
+          "weight"
+        ]
+      },
+      "display": {
+        "component": "table"
+      }
+    }
+  }
+}
