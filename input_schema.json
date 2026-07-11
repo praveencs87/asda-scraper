@@ -3,16 +3,13 @@
   "type": "object",
   "schemaVersion": 1,
   "properties": {
-    "searchQueries": {
-      "title": "Search Queries",
+    "startUrls": {
+      "title": "Start URLs",
       "type": "array",
-      "description": "List of keywords to search for.",
-      "editor": "stringList",
+      "description": "List of Asda category or search URLs to scrape.",
+      "editor": "requestListSources",
       "prefill": [
-        "asda"
-      ],
-      "default": [
-        "asda"
+        { "url": "https://groceries.asda.com/search/milk" }
       ]
     },
     "maxItems": {
@@ -33,6 +30,6 @@
     }
   },
   "required": [
-    "searchQueries"
+    "startUrls"
   ]
 }
